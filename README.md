@@ -45,3 +45,8 @@ const GlobalStyle = createGlobalStyle`
 
 <GlobalStyle />
 ```
+
+## Prior art
+
+- https://github.com/sergeysova/styled-normalize
+- https://github.com/tailwindcss/tailwindcss
