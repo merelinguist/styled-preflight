@@ -1,0 +1,28 @@
+{
+  "name": "styled-preflight",
+  "version": "8.0.0",
+  "main": "dist/index.js",
+  "typings": "index.d.ts",
+  "repository": "https://github.com/merelinguist/styled-preflight.git",
+  "author": "merelinguist <merelinguist@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "prefetch": "node ./bin/fetch.js",
+    "update": "yarn add normalize.css@latest && yarn prefetch",
+    "build": "babel -d dist src",
+    "prepare": "yarn build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-plugin-styled-components": "^1.10.1",
+    "normalize.css": "^8.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.1"
+  },
+  "peerDependencies": {
+    "styled-components": "^4.0.0"
+  }
+}
