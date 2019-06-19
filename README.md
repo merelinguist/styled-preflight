@@ -1,1 +1,1 @@
-![](/docs/card.png)
+![](/docs/banner.png)
