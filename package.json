@@ -1,17 +1,38 @@
 {
   "name": "styled-preflight",
   "version": "8.0.0",
+  "description": "Normalize.css with a kick for styled-components CSS-in-JS library",
   "main": "dist/index.js",
-  "typings": "index.d.ts",
-  "repository": "https://github.com/merelinguist/styled-preflight.git",
-  "author": "merelinguist <merelinguist@users.noreply.github.com>",
-  "license": "MIT",
   "scripts": {
     "prefetch": "node ./bin/fetch.js",
     "update": "yarn add normalize.css@latest && yarn prefetch",
     "build": "babel -d dist src",
     "prepare": "yarn build"
   },
+  "typings": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeysova/styled-normalize.git"
+  },
+  "keywords": [
+    "styled",
+    "components",
+    "normalize",
+    "css",
+    "react",
+    "jss",
+    "styles",
+    "import",
+    "export",
+    "preflight",
+    "tailwindcss"
+  ],
+  "author": "merelinguist <merelinguist@users.noreply.github.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/merelinguist/styled-preflight/issues"
+  },
+  "homepage": "https://github.com/merelinguist/styled-preflight#readme",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
