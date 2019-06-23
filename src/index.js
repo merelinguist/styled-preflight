@@ -194,6 +194,7 @@ export const preflight = css`
       'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     line-height: 1.5;
   }
+  *,
   *::before,
   *::after {
     border-width: 0;
