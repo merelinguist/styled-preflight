@@ -14,17 +14,17 @@ yarn add styled-preflight
 
 ```jsx
 // index.js
-import React from "react";
-import { Preflight } from "styled-preflight";
+import React from 'react'
+import { Preflight } from 'styled-preflight'
 
-import { App } from "./app";
+import { App } from './app'
 
 const Root = () => (
   <React.Fragment>
     <Preflight />
     <App />
   </React.Fragment>
-);
+)
 ```
 
 Alternatively, you can use the `createGlobalStyle` API:
