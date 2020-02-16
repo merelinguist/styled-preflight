@@ -7,10 +7,16 @@ The original `normalize.css` is pulled from necolas/normalize.css, and parsed in
 ## Usage
 
 ```sh
+npm i styled-preflight
+```
+
+```sh
 yarn add styled-preflight
 ```
 
-### styled-components v4
+### styled-components v4 / v5
+
+Use as component:
 
 ```jsx
 // index.js
@@ -27,24 +33,48 @@ const Root = () => (
 )
 ```
 
-Alternatively, you can use the `createGlobalStyle` API:
+Alternatively, you can use the [`createGlobalStyle`](https://styled-components.com/docs/api#createglobalstyle) API:
 
 ```jsx
 // styles/index.js
-import { preflight } from 'styled-preflight'
 import { createGlobalStyle } from 'styled-components'
+import { preflight } from 'styled-preflight'
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   ${preflight}
 
-  // Continue writing global styles
+  // You can continue writing global styles here
   body {
     background-color: black;
   }
 `
 
-<GlobalStyle />
+// index.js
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+import { GlobalStyle } from './styles'
+import { App } from './app'
+
+const Root = () => (
+  <React.Fragment>
+    <GlobalStyle />
+    <App />
+  </React.Fragment>
+)
+
+ReactDOM.render(<Root />, document.querySelector('#root'))
 ```
+
+You can also use named imports:
+
+```jsx
+// ES Modules
+import { normalize, Normalize } from 'styled-normalize'
+
+// CommonJS
+const { normalize, Normalize } = require('styled-normalize')
+````
 
 ## Prior art
 
