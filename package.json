@@ -12,7 +12,7 @@
   "typings": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sergeysova/styled-normalize.git"
+    "url": "git+https://github.com/merelinguist/styled-preflight.git"
   },
   "keywords": [
     "styled",
