@@ -15,13 +15,13 @@ yarn add styled-preflight
 ```jsx
 // index.js
 import React from 'react'
-import { Normalize } from 'styled-normalize'
+import { Preflight } from 'styled-preflight'
 
 import { App } from './app'
 
 const Root = () => (
   <React.Fragment>
-    <Normalize />
+    <Preflight />
     <App />
   </React.Fragment>
 )
@@ -31,11 +31,11 @@ Alternatively, you can use the `createGlobalStyle` API:
 
 ```jsx
 // styles/index.js
-import { normalize } from 'styled-normalize'
+import { preflight } from 'styled-preflight'
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
-  ${normalize}
+  ${preflight}
 
   // Continue writing global styles
   body {
