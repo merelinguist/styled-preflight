@@ -70,10 +70,10 @@ You can also use named imports:
 
 ```jsx
 // ES Modules
-import { normalize, Normalize } from 'styled-normalize'
+import { preflight, Preflight } from 'styled-preflight'
 
 // CommonJS
-const { normalize, Normalize } = require('styled-normalize')
+const { preflight, Preflight } = require('styled-preflight')
 ````
 
 ## Prior art
